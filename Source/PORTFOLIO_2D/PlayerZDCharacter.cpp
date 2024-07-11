@@ -26,7 +26,7 @@ APlayerZDCharacter::APlayerZDCharacter()
 	SpringArmComponent->bInheritRoll = false;
 	SpringArmComponent->bInheritYaw = false;
 	SpringArmComponent->TargetArmLength = 1200.0f;
-	SpringArmComponent->SetRelativeRotation(FRotator(-90.0f, 0.0f, 0.0f));
+	SpringArmComponent->SetRelativeRotation(FRotator(-60.0f, 0.0f, 0.0f));
 	SpringArmComponent->bDoCollisionTest = false;
 
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
