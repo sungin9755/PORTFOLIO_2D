@@ -13,5 +13,19 @@ UCLASS()
 class PORTFOLIO_2D_API AMyPlayerController : public APlayerController
 {
 	GENERATED_BODY()
+public:
+	AMyPlayerController();
+
+	virtual void SetupInputComponent() override;
+	virtual void PlayerTick(float DeltaTime) override;
+
+	UFUNCTION()
+		void MoveForward(float AxisValue);
+
+	UFUNCTION()
+		void MoveRight(float AxisValue);
+
+	UFUNCTION()
+		void LookMouseCursor();
 	
 };
