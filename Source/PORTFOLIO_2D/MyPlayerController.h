@@ -17,16 +17,16 @@ class PORTFOLIO_2D_API AMyPlayerController : public APlayerController
 public:
 	AMyPlayerController();
 
-	virtual void SetupInputComponent() override;
+	//virtual void SetupInputComponent() override;
 	virtual void PlayerTick(float DeltaTime) override;
 
-	UFUNCTION()
-		void MoveForward(float AxisValue);
+	//UFUNCTION()
+	//	void MoveForward(float AxisValue);
 
-	UFUNCTION()
-		void MoveRight(float AxisValue);
+	//UFUNCTION()
+	//	void MoveRight(float AxisValue);
 
-	UFUNCTION()
-		void LookMouseCursor();
+	//UFUNCTION()
+	//	void LookMouseCursor();
 	
 };

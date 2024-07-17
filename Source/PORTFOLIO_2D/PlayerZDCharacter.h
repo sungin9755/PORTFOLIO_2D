@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "PaperZDCharacter.h"
+#include "InputActionValue.h"
 #include "PlayerZDCharacter.generated.h"
 
 /**
@@ -22,7 +23,7 @@ protected:
 public:
 	virtual void Tick(float DeltaTime) override;
 
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	//virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		class UCameraComponent* CameraComponent;
@@ -30,5 +31,13 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		class USpringArmComponent* SpringArmComponent;
 
-
+private:
+//	UPROPERTY(VisibleAnywhere, Category = Input)
+//		class UInputMappingContext* DefaultContext;
+//
+//	UPROPERTY(VisibleAnywhere, Category = Input)
+//		class UInputAction* MoveAction;
+//
+//protected:
+//	void Move(const const FInputActionInstance& Instance);
 };
