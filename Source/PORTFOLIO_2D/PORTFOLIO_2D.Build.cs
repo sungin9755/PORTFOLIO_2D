@@ -8,7 +8,13 @@ public class PORTFOLIO_2D : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" , "PaperZD", "EnhancedInput"});
+		PublicDependencyModuleNames.AddRange(new string[] { "Core",
+            "CoreUObject",
+            "Engine",
+            "InputCore",
+            "UMG",
+            "Slate",
+            "SlateCore" , "PaperZD", "EnhancedInput"});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
